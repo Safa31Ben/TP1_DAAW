@@ -1,11 +1,13 @@
-:root {
-    --background_Color: ;
-    --color_1:  ;
-    --color_2: ;
-    --color_3: ;
-    --color_4: ; 
-    --color_5: ;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
+:root {
+    --background_color: #c1d4d9;
+    --button_color: #326173 ;
+    --s_color_1: #6d96a6;
+    --s_color_2: #8c3503; 
+    --s_color_3: #d96a6a;
+
+    --font_color: #010D1D;
     --font_family: 'Montserrat', sans-serif;
 }
 
@@ -15,5 +17,9 @@
     box-sizing: border-box;
     font-family: var(--font_family);
     user-select: none;
-    color: black;
+    color: var(--font_color);
+}
+
+body {
+    background: var(--background_color);
 }

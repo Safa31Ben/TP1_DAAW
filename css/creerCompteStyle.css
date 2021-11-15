@@ -1,1 +1,23 @@
-@import url(/css/gStyle.css);
+@import url(/css/indexStyle.css);
+
+body {
+    height: 730px ;
+}
+
+.container {
+    top: 40px;
+    height: 650px;
+}
+
+.formulaire {
+    border-radius: 40px;
+    width: 100%;
+}
+
+#inputContainer {
+    top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 20px;
+}

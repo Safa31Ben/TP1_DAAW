@@ -1,1 +1,114 @@
 @import url(/css/gStyle.css);
+
+* {
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+.container {
+    position: absolute;
+    background: white;
+    top: 80px;
+    left: 150px;
+    width: calc(100% - 300px);
+    height: calc(100% - 160px);
+    align-items: center;
+    display: flex;
+    border-radius: 40px;
+    box-shadow: 0 35px 50px rgba(0,0,0, 0.4);
+}
+
+.illustration ,.formulaire {
+    position: relative;
+    height: 100%;
+}
+
+.illustration {
+    padding: 20px;
+    width: 45%;
+}
+
+.illustration img {
+    width: 110%;
+    height: 110%;
+}
+
+.formulaire {
+    position: relative;
+    border-radius: 50px 40px 40px 50px;
+    width: 55%;
+    padding: 30px;
+    background: var(--s_color_3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* style de contenu de formulaire */
+
+.formulaire h1 {
+    text-transform: Uppercase;
+    font-size: 2rem;
+}
+
+.formulaire p {
+    background: #f5deb3;
+    color: red;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin: 10px;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 6px;
+    opacity: 0;
+}
+
+.formulaire input {
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.inputs {
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    padding: 16px;
+    background: var(--background_color);
+    border: 0;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.inputs:focus {
+    border: 1px solid var(--s_color_2);
+}
+
+.formulaire input[type="button"] {
+    height: 50px;
+    width: 30%;
+    font-size: 18px;
+    display: flex;
+    float: right;
+    justify-content: center;
+    border-radius: 7px 15px;
+    border: 2px solid var(--button_color);
+    background: var(--button_color);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.formulaire input[type="button"]:hover {
+    background: var(--s_color_1);
+    border-color: var(--s_color_1);
+    font-size: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.formulaire a {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.formulaire a:hover {
+    color: var(--s_color_2);
+}

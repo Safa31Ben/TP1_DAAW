@@ -5,15 +5,78 @@
 
         <title></title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-        
         <link rel="stylesheet" href="/css/creerCompteStyle.css" type="text/css"> 
 
     </head>
 
     <body>
+
+        <div class="container">
+
+            <div class="formulaire">
+                <h1> Inscription </h1>
+
+                <!-- formulaire d'inscription -->
+                <form id="inscriptionForm" name="inscriptionForm" action="/html/accueil.html" method="POST">
+                    <!-- message d'erreur -->
+                    <p class="invalid"></p>
+                    
+                    <!-- entrées de formulaire -->
+                    <div id="inputContainer">
+                        <div>
+                            <label>Nom </label>
+                            <input class="inputs" type="text" name="firstName" required >
+                        </div>
+                        
+                        <div>
+                            <label>Prenom </label>
+                            <input class="inputs" type="text" name="lastName" required >
+                        </div>
+
+                        <div>
+                            <label>Date de naissance </label>
+                            <input class="inputs" type="date" name="birthday" required >
+                        </div>
+
+                        <div>
+                            <label>Adresse </label>
+                            <input class="inputs" type="text" name="adress" required >
+                        </div>
+
+                        <div>
+                            <label>Email</label>
+                            <input class="inputs" type="email" name="email" required >
+                        </div>
+
+                        <div>
+                            <label>Téléphone </label>
+                            <input class="inputs" type="tel" name="phoneNumber" size="10" list="default" required >
+                            <datalist id="default">
+                                <option value="05">
+                                <option value="06">
+                                <option value="07">
+                            </datalist>
+                        </div>
+
+                        <div>
+                            <label>Nom d'utilisateur</label>
+                            <input class="inputs"  type="text" name="userName" required >
+                        </div>
+
+                        <div>
+                            <label>Mot de passe</label>
+                            <input class="inputs" type="password" name="password" required >
+                        </div>
+                    </div>
+
+                    <input class="submit" type="button" value="Inscrire" >
+                </form>
+
+                <!-- Connexion -->
+                <a id="lienInscription" href="/html/index.html">Avez-vous un compte? Connexion</a>
+            </div>
+        </div>
         
+        <script src="/js/loginScript.js"></script>
     </body>
 </html>
