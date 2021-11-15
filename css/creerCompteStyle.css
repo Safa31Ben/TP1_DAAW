@@ -1,17 +1,27 @@
 @import url(/css/indexStyle.css);
 
 body {
-    height: 730px ;
 }
 
 .container {
-    top: 40px;
-    height: 650px;
+    top: 20px;
+    height: auto;
 }
 
 .formulaire {
     border-radius: 40px;
     width: 100%;
+    padding: 18px;
+}
+
+.formulaire a {
+    padding: 0;
+    font-size: 18px;
+}
+
+.formulaire p {
+    padding: 5px 15px;
+    margin: 10px;
 }
 
 #inputContainer {
@@ -20,4 +30,67 @@ body {
     grid-template-columns: 1fr 1fr;
     row-gap: 10px;
     column-gap: 20px;
+}
+
+/* Inscription avec succès message */
+.successRegistration {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageBox {
+    width: 40%;
+    height: 60%;
+    background: var(--button_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20%;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.6),
+                inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+.checked {
+    position: relative;
+    height: 125px;
+    width: 125px;
+    background: var(--s_color_3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.checked img {
+    height: 85%;
+    width: 85%;
+}
+
+.message {
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+    font-size: 1.5rem;
+}
+
+.successRegistration button {
+    position: relative;
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    background: var(--background_color);
+    border: 2px solid var(--font_color);
+    border-radius: 7px 10px;
+}
+
+.successRegistration button:hover {
+    font-size: 25px;
+    color: white;
+    background: var(--font_color);
 }

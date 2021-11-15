@@ -7,7 +7,7 @@ let users = [
         birthday: "01-01-1999",
         adress: "Touggourt",
         email: "safa@gmail.com",
-        phoneNum: "06 00 00 00 00",
+        phoneNum: "0600000000",
         userName: "safsaf",
         password: "azerty"
     } 
@@ -19,6 +19,8 @@ let inscriptionForm = document.getElementById("inscriptionForm");
 let inputs = document.querySelectorAll('.inputs');
 let submit = document.querySelector('.submit');
 let invalidMsg = document.querySelector('.invalid');
+let successRegistration = document.querySelector('.successRegistration');
+let OKbutton = document.querySelector('.successRegistration button');
 
 submit.onclick = () => {
 
@@ -109,7 +111,7 @@ submit.onclick = () => {
                     inputs[7].value
                 )
                 
-                inscriptionForm.submit(); 
+                successRegistration.style.display = "flex";
             }
         } else {
             invalidMsg.innerHTML = "Il faut remplir tout les champ";
@@ -128,4 +130,8 @@ function validatePhoneNumber() {
             valid = false ;
     
     return valid;
+}
+
+OKbutton.onclick = () => {
+    inscriptionForm.submit();
 }
