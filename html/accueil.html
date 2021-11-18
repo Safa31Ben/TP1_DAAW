@@ -1,39 +1,293 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        
-        <title>Gestion des absences</title>
+<html lang="en">
 
-        <link rel="stylesheet" href="/css/accueilStyle.css" type="text/css"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <title>accueil</title>
+</head>
 
-    </head>
+<body>
+  <div class="header">
+    <div class="logo"><img src="images/logo.png" alt="logo"></div>
+    <h2>
+      UNIVERSITE <br>CONSTANTINE2
+    </h2>
+    <div class="icons">
+      <img class="icon-notic" src="icons/bell.png">
+      <img class="icon-user" src="icons/user.png ">
+    </div>
+    <div class="accout-info">
+      <h5>soheib<br>daoudi</h5>
+    </div>
+    <div class="dropdown">
+      <span><img src="icons/down-filled-triangular-arrow.png"></span>
+      <div class="dropdown-content">
+        <h2>soheib daoudi</h2>
+        <ul>
+          <li><a><img src="icons/user.png" alt="">my profile</a></li>
+          <li><a><img src="icons/edit.png" alt="">edit profile</a></li>
+          <li><a><img src="icons/inbox.png" alt="">inbox</a></li>
+          <li><a><img src="icons/setting.png" alt="">settings</a></li>
+          <li><a><img src="icons/help-web-button.png" alt="">help</a></li>
+          <li><a><img src="icons/logout.png" alt="">log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    <body>
-        
-        <!-- Sextion 1 : l'entete de la page -->
-        <section id="entete">
-            <img src="" alt="nticImg"> <!-- image de la faculté -->
-
-            <!-- les information de l'utilisateur -->
-            <div></div>
-        </section>
-
-        <!-- Sextion 2 : menu vertical à gauche de la page -->
-        <section id="menuVertical">
-            <a href="">Liste des utilisateur</a>
-            <a href="">Ajouter utilisateur</a>
-            <a href="">Modifier utilisateur</a>
-            <a href="">Supprimer utilisateur</a>
-        </section>
-        
-        <!-- Sextion 3 : affiche la list des utilisateur ou formulaire d'ajout/modification/suppression -->
-        <section id="rest">
-            <div class="container">
-                
+  <div class="container">
+    <div class="container-left">
+      <ul>
+        <li> <a id="zero" href="#"><img src="icons/home.png" alt="home">Accueil</a></li>
+        <li><a id="one" href="#"><img src="icons/group.png" alt="home">Liste des utilisateurs </a></li>
+        <li><a id="two" href="#"><img src="icons/delete-user.png" alt="home">Ajouter utilisateur</a></li>
+        <li><a id="three" href="#"><img src="icons/edit.png" alt="home">modifier utilisateur</a></li>
+        <li><a id="four" href="#"><img src="icons/delete-user.png" alt="home">Supprimer utilisateur</a></li>
+      </ul>
+    </div>
+    <div class="container-right">
+      <h1>
+        gestion des absences
+      </h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni esse ab nulla at facilis, dolor minus
+        repellendus! Quia, eos sit officia repudiandae, unde nesciunt minus accusantium facere adipisci ducimus ipsum.
+      </p>
+      <img src="images/eduvation.png"/>
+    </div>
+  </div>
+  
+  <script type="text/template" id="myHtml1">
+        <div class="table">
+            <div class="table-header">
+                <div class="header__item"><a id="ID" class="filter__link" href="#">num</a></div>
+                <div class="header__item"><a id="fname" class="filter__link " href="#">Nom</a></div>
+                <div class="header__item"><a id="sname" class="filter__link " href="#">Prenom</a></div>
+                <div class="header__item"><a id="daten" class="filter__link" href="#">DATE DE NE</a></div>
+                <div class="header__item"><a id="sexe" class="filter__link " href="#">SEXE</a></div>
+                <div class="header__item"><a id="dpt" class="filter__link " href="#">Departement</a></div>
+                <div class="header__item"><a id="year" class="filter__link " href="#">Niveau</a></div>
             </div>
-        </section>
+            <div class="table-content">	
+              <div class="table-row">		
+                  <div class="table-data" >001</div>
+                  <div class="table-data">daoudi</div>
+                  <div class="table-data">soheib</div>
+                  <div class="table-data">17/02/2001</div>
+                  <div class="table-data">homme</div>
+                  <div class="table-data">TLSI</div>
+                  <div class="table-data">L3</div>
+              </div>
+          </div>	
+          <div class="table-content">	
+            <div class="table-row">		
+                <div class="table-data" >002</div>
+                <div class="table-data">SAFA</div>
+                <div class="table-data">Benabdsadouk</div>
+                <div class="table-data">02/06/2001</div>
+                <div class="table-data">famme</div>
+                <div class="table-data">TLSI</div>
+                <div class="table-data">L3</div>
+            </div>
+        </div>
+        <div class="table-content">	
+          <div class="table-row">		
+              <div class="table-data" >003</div>
+              <div class="table-data">sellami</div>
+              <div class="table-data">ali</div>
+              <div class="table-data">10/05/2002</div>
+              <div class="table-data">homme</div>
+              <div class="table-data">MI</div>
+              <div class="table-data">L2</div>
+          </div>
+      </div>
+      <div class="table-content">	
+        <div class="table-row">		
+            <div class="table-data" >004</div>
+            <div class="table-data">omar</div>
+            <div class="table-data">farouk</div>
+            <div class="table-data">14/07/2001</div>
+            <div class="table-data">homme</div>
+            <div class="table-data">IFA</div>
+            <div class="table-data">L3</div>
+        </div>
+    </div>
+            <div class="table-content">	
+                <div class="table-row">		
+                    <div class="table-data" ><span id="ID1"></span></div>
+                    <div class="table-data"><span id="fname1"></span></div>
+                    <div class="table-data"><span id="sname1"></span></div>
+                    <div class="table-data"><span id="daten1"></span></div>
+                    <div class="table-data"><span id="sexe1"></span></div>
+                    <div class="table-data"><span id="dpt1"></span></div>
+                    <div class="table-data"><span id="year1"></span></div>
+                </div>
+            </div>	
+        </div>
+  </script>
+    <script type="text/template" id="myHtml2">
+        <div class="container2">
+            <div class="title">Registration</div>
+            <div class="content">
+              <form action="#">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Nom</span>
+                    <input id="fnamev" type="text" placeholder="Enter votre nom" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Prénom</span>
+                    <input  id="snamev" type="text" placeholder="Enter votre prenom" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">sexe</span>
+                    <select id="sexev" name="sexe genre" form="sexe form">
+                        <option value="homme">homme</option>
+                        <option value="famme">famme</option>
+                      </select>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Data de naissance</span>
+                    <input  id="datenv"type="date" id="ne" name="date de ne" required
+                     value="2001-07-22"
+                     min="1950-01-01" max="2018-12-31" >
+                  </div>
+                 
+                  <div class="input-box">
+                    <span class="details">Nationalite</span>
+                    <input  id="natv"type="text" placeholder="enter votre nationalite" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Département </span>
+                    <input  id="dptv"type="text" placeholder="Enter votre departement" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Num de bac  </span>
+                    <input id="bacv" type="numero" placeholder="Entervotre numero de bac " required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Année de bac   </span>
+                    <input  id="anbacv"type="text" placeholder="Enter votre annee de bac " required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Filiére   </span>
+                    <input id="filv"type="text" placeholder="Enter votre filiere de bac " required>
+                  </div>
+                  
+                </div>
+                <div class="button">
+                  <input id="setValue" type="button" value="Register">
+                </div>
+                  
+              
+              </form>
+            </div>
+          </div>
+  </script>
+    <script type="text/template" id="myHtml3">
+    <div class="container2">
+      <div class="title">Modification</div>
+      <div class="content">
+        <div id="input-box">
+          <span class="details">Num</span>
+          <input id="fnamev" type="text" placeholder="Enter le numero " required>
+        </div>
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Nom</span>
+              <input id="fnamev" type="text" placeholder="Enter votre nom" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Prénom</span>
+              <input  id="snamev" type="text" placeholder="Enter votre prenom" required>
+            </div>
+            <div class="input-box">
+              <span class="details">sexe</span>
+              <select id="sexev" name="sexe genre" form="sexe form">
+                  <option value="homme">homme</option>
+                  <option value="famme">famme</option>
+                </select>
+            </div>
+            <div class="input-box">
+              <span class="details">Data de naissance</span>
+              <input  id="datenv"type="date" id="ne" name="date de ne" required
+               value="2001-07-22"
+               min="1950-01-01" max="2018-12-31" >
+            </div>
+           
+            <div class="input-box">
+              <span class="details">Nationalite</span>
+              <input  id="natv"type="text" placeholder="enter votre nationalite" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Département </span>
+              <input  id="dptv"type="text" placeholder="Enter votre departement" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Num de bac  </span>
+              <input id="bacv" type="numero" placeholder="Entervotre numero de bac " required>
+            </div>
+            <div class="input-box">
+              <span class="details">Année de bac   </span>
+              <input  id="anbacv"type="text" placeholder="Enter votre annee de bac " required>
+            </div>
+            <div class="input-box">
+              <span class="details">Filiére   </span>
+              <input id="filv"type="text" placeholder="Enter votre filiere de bac " required>
+            </div>
+            
+          </div>
+          <div class="button">
+            <input id="setValue" type="button" value="modifier">
+          </div>
+            
+        
+        </form>
+      </div>
+    </div>
+    </script>
+    <script type="text/template" id="myHtml4">
+        <div class="container2">
+            <div class="title">Supprimer</div>
+            <div id="input-box">
+              <span class="details">Num</span>
+              <input id="fnamev" type="text" placeholder="Enter le numero " required>
+            </div>
+            </div>
+            <div class="table">
+                <div class="table-header">
+                    <div class="header__item"><a id="name" class="filter__link" href="#">ID</a></div>
+                    <div class="header__item"><a id="wins" class="filter__link " href="#">FIRST Name</a></div>
+                    <div class="header__item"><a id="draws" class="filter__link " href="#"> SECOND NAME</a></div>
+                    <div class="header__item"><a id="losses" class="filter__link" href="#">DATE DE NE</a></div>
+                    <div class="header__item"><a id="total" class="filter__link " href="#">SEXE</a></div>
+                    <div class="header__item"><a id="total" class="filter__link " href="#">DPT</a></div>
+                    <div class="header__item"><a id="total" class="filter__link " href="#">YEAR</a></div>
+                </div>
+                <div class="table-content">	
+                    
+                    <div class="table-content">	
+                      <div class="table-row">		
+                          <div class="table-data" >001</div>
+                          <div class="table-data">daoudi</div>
+                          <div class="table-data">soheib</div>
+                          <div class="table-data">17/02/2001</div>
+                          <div class="table-data">homme</div>
+                          <div class="table-data">TLSI</div>
+                          <div class="table-data">L3</div>
+                      </div>
+                    </div>
+                    <div class="button">
+                      <input id="setValue" type="button" value="Supprimer">
+                    </div>
+                  </div>
+        </div>
+     </script>
 
-        <script src="/js/accueil.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
