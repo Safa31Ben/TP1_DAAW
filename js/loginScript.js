@@ -10,7 +10,7 @@ let users = [
         phoneNum: "0600000000",
         userName: "safsaf",
         password: "azerty"
-    } 
+    }
 ]; 
 
 // variables
@@ -100,17 +100,17 @@ submit.onclick = () => {
                 invalidMsg.innerHTML = "Ce nom d'utilisateur existe déjà";
                 invalidMsg.style.opacity = 1;
             } else {
-                users.push(
-                    inputs[0].value,
-                    inputs[1].value,
-                    inputs[2].value,
-                    inputs[3].value,
-                    inputs[4].value,
-                    inputs[5].value,
-                    inputs[6].value,
-                    inputs[7].value
-                )
-                
+                users.push({
+                    firstName: inputs[0].value,
+                    lastName: inputs[1].value,
+                    birthday: inputs[2].value,
+                    adress: inputs[3].value,
+                    email: inputs[4].value,
+                    phoneNum: inputs[5].value,
+                    userName: inputs[6].value,
+                    password: inputs[7].value
+                    }
+                );
                 successRegistration.style.display = "flex";
             }
         } else {
