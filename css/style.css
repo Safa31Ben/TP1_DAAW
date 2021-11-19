@@ -63,7 +63,7 @@ justify-content: center;
 display: inline-block;
 width: 100%;
 
- 
+
 }
 .dropdown-content li a img{ 
   width: 1em;
@@ -75,11 +75,11 @@ width: 100%;
   color: white;
   text-decoration: none;
   padding-bottom: 1em;
- 
+
 }
 .dropdown-content  li:hover {
  background-color: rgba(0,0,0,0.15);
- 
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -97,7 +97,7 @@ width: 100%;
 .accout-info{ 
     margin-left: 1em;
     color: #ffff;
-   
+
 }
 .container {
     width: 100%;
@@ -121,7 +121,7 @@ width: 100%;
     padding: 0;
     display: inline-block;
   }
-  
+
   .container-left  li a {
     text-align: center;
     color: white;
@@ -129,17 +129,17 @@ width: 100%;
     display: block;
     padding: 1em;
   }
- 
+
   .container-left  li img{ 
       width: 2em;
       padding-right: 0.5em;
-  
+
   }
-  
+
   .container-left li a:hover {
     background-color: #023059;
     color: white;
-   
+
   }  
   .container-right h1{ 
     padding:  2em  2em 0 2em;
@@ -165,7 +165,7 @@ width: 100%;
 	display:flex;
 	width:100%;
   background:#00427F;
-   
+
 }
 .table-row {
 	display:flex;
@@ -190,7 +190,7 @@ width: 100%;
 	text-decoration: none;
 	position:relative;
 	display:inline-block;
-	
+
 	}
 .container2{
     width: 95%;
@@ -287,4 +287,4 @@ width: 100%;
    }
     .button input:hover{
     background: #006ACC;
-    }
+}

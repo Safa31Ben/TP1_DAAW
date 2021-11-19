@@ -2,27 +2,30 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>Gestion des absences</title>
+        
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         
         <link rel="stylesheet" href="/css/indexStyle.css" type="text/css"> 
 
     </head>
 
-    <body>
+    <body onload="loginScript()">
 
         <div class="container">
 
             <!-- sign in illustration -->
             <div class="illustration">
-                <img src="/images/Sign in-rafiki.png" alt="loginIllustration">
+                <img src="/images/Sign in.png" alt="loginIllustration">
             </div>
 
             <div class="formulaire">
                 <h1> Bienvenue </h1>
 
                 <!-- formulaire d'authentification-->
-                <form id="authenticationForm" name="authenticationForm" action="/html/accueil.html" method="POST">
+                <form id="authenticationForm" name="authenticationForm" action="/html/accueil.html" method="GET">
                     <p class="invalid">Nom d'utilisatuer ou mot de passe incorrect</p>
 
                     <label>Nom d'utilisateur</label>
@@ -39,6 +42,6 @@
             </div>
         </div>
 
-        <script src="/js/loginScript.js"></script>
+        <script src="/js/script.js"></script>
     </body>
 </html>

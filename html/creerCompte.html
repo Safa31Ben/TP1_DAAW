@@ -3,13 +3,17 @@
     <head>
         <meta charset="UTF-8" />
 
-        <title></title>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Gestion des absences | Inscription</title>
+        
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
         <link rel="stylesheet" href="/css/creerCompteStyle.css" type="text/css"> 
 
     </head>
 
-    <body>
+    <body onload="loginScript()">
 
         <div class="container">
 
@@ -17,7 +21,7 @@
                 <h1> Inscription </h1>
 
                 <!-- formulaire d'inscription -->
-                <form id="inscriptionForm" name="inscriptionForm" action="/html/accueil.html" method="POST">
+                <form id="inscriptionForm" name="inscriptionForm" action="/html/accueil.html" method="GET">
                     <!-- message d'erreur -->
                     <p class="invalid"></p>
                     
@@ -91,6 +95,6 @@
             </div>
         </div>
 
-        <script src="/js/loginScript.js"></script>
+        <script src="/js/script.js"></script>
     </body>
 </html>
