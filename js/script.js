@@ -284,10 +284,10 @@ function ajourUser() {
           
         } 
         else if( !inputs[5].value.startsWith("05") && !inputs[5].value.startsWith("06") && !inputs[5].value.startsWith("07") ) {
-          document.getElementById("message3").innerHTML = "Cette Numero de téléphone est invalid";
+          document.getElementById("message2").innerHTML = "Cette Numero de téléphone est invalid";
         } 
         else if( !inputs[5].value.match(/[0-9]/i) || inputs[5].value.length !== 10 )  {
-          document.getElementById("message3").innerHTML = "Cette Numero de téléphone est invalid";
+          document.getElementById("message2").innerHTML = "Cette Numero de téléphone est invalid";
         } 
         else if( inputs[7].value.length > 8 || inputs[7].value.length < 4 ) {
           document.getElementById("message2").innerHTML = "Choisissez un mot de passe pour minimum 4 caractères et maximum 8 caractères";
@@ -431,8 +431,7 @@ function setUserInfo() {
   let j ;
   let infod = infos[i].split("=");
   for( j = 0 ; j < users.length ; j++){
-    console.log(users[j]);
-    if(users[j].userName == infod[1] ){
+      if(users[j].userName == infod[1] ){
       break;
     }
   }
